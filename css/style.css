@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+.header{
+    height: 350px;
+    width: auto;
+    background-image: url('../img/fondoHeader.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    border-bottom: solid #ce9835 10px;
+}
+
+
+/* HEADER */
+.header h1{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #313131;
+    font-size: 65px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 40px 0 40px;
+    border-radius: 30px;
+}
+
+.header ul{
+    padding: 8px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header li{
+    background-color: #4b4b4b;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: solid #ce9835 1px;
+    border-radius: 8px;
+}
+
+.header a{
+    color: #ce9835;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* MAIN */
+.main{
+    width: auto;
+    height: auto;
+    background-image: url('../img/fondoMain.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+}
+
+/* Cuadro contenedor de imagenes y titulo de mochila */
+.main contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(184, 255, 231, 0.3);
+    border-radius: 40px;
+}
+
+.main h2{
+    background: linear-gradient(0deg, rgba(206,152,53,0.1) 0%, rgba(5,209,209,0.1) 100%);
+    color: #05d1d1;
+    display: inline-block;
+    margin: 10px;
+    padding:50px;
+    border-radius: 20px;
+    font-size: 60px;
+}
+
+.main ul{
+    display: grid;
+    justify-content: space-around;
+    justify-items: end;
+    align-content: center;
+    grid-template-areas:
+    "producto1 producto2 producto3"
+    "producto4 producto5 producto6"
+    "producto7 producto8 producto9";
+    padding: 5px;   
+}
+
+.main li{
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+    border: solid #ce9835 3px;
+    border-radius: 15px;
+    margin: 40px;
+    /* centrar imagen */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+.main li:hover {
+    border-radius: 30%;
+    transition: .3s;
+}
+
+.main .li1{
+    background-image: url(../img/mochilaRoja.jpg);
+}
+
+.main .li2{
+    background-image: url(../img/mochilaBlackCamel.jpg);
+}
+
+.main .li3{
+    background-image: url(../img/mochilaBlackWhite.jpg);
+}
+
+.main .li4{
+    background-image: url(../img/mochilaNegraAmayra.jpg);
+}
+
+.main .li5{
+    background-image: url(../img/mochilaNino.jpg);
+}
+
+.main .li6{
+    background-image: url(../img/mochilaRoja.jpg);
+}
+
+.main .li7{
+    background-image: url(../img/morralNegroAmayra.jpg);
+}
+
+.main .li8{
+    background-image: url(../img/morralPetrelAmayra.jpg);
+}
+
+.main .li9{
+    background-image: url(../img/morralVerdeAmayra.jpg);
+}
+
+.main a{
+    background-color: rgba(184, 255, 231, 0.3);
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 420px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4b4b4b;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #f8b435;
+    border-top: solid #4b4b4b 10px;
+    padding: 50px;
+}
+
+
+.footer__label{
+    display: block;
+    padding: 15px;
+    text-align: left;
+}
+
+.footer span{
+    color: #4b4b4b;
+    margin: 0px 50px 0px 20px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.footer input{
+    color: #05d1d1;
+    margin: 0px 50px 0px 20px;
+    padding: 0 0 0 8px;
+    border: inset 5px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+.footer ol{
+    text-align: right;
+    padding-right: 100px;
+}
+
+.footer li{
+    display: inline-block;
+}
+
+.footer img{
+    margin: 0 10px 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
