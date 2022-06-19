@@ -17,16 +17,53 @@
     <!-- ENCABEZADO -->
     <header class="header">
         <h1>MAITEE ACCESORIOS DE MODA</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./mochilas.html">MOCHILAS</a></li>
-                <li><a href="./billeteras.html">BILLETERAS</a></li>
-                <li><a href="./morrales.html">MORRALES</a></li>
-                <li><a href="./carteras.html">CARTERAS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-light bg-success fs-5 text-dark bg-opacity-50">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="logoNavbar" src="./img/logoMaitee2.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                  </li>
+                  <!-- DROPDOWN -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MOCHILAS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Maternales</a></li>
+                      <li><a class="dropdown-item" href="#">School</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./mochilas.html">TODAS</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./billeteras.html">BILLETERAS</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./morrales.html">MORRALES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./carteras.html">CARTERAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                  <button class="btn btn-outline-warning " type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->

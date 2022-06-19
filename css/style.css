@@ -4,7 +4,19 @@
 }
 
 /* HEADER */
+
+
+#logoNavbar{
+    width: 100px;   
+    height: 100px;
+    border-radius: 50px;
+}
+
+
 .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 350px;
     width: auto;
     background-image: url('../img/fondoHeader.jpg');
@@ -13,37 +25,15 @@
     border-bottom: solid #ce9835 10px;
 }
 
-
-/* HEADER */
 .header h1{
     background-color: rgba(255, 255, 255, 0.2);
     color: #313131;
     font-size: 65px;
     text-align: center;
     padding: 15px;
-    margin: 0 40px 0 40px;
+    margin: 1rem 2rem 0 2rem;
     border-radius: 30px;
-}
-
-.header ul{
-    padding: 8px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.header li{
-    background-color: #4b4b4b;
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    border: solid #ce9835 1px;
-    border-radius: 8px;
-}
-
-.header a{
-    color: #ce9835;
-    text-decoration: none;
-    font-weight: bold;
+    
 }
 
 
