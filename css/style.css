@@ -66,6 +66,9 @@
     padding:50px;
     border-radius: 20px;
     font-size: 60px;
+    animation-name: textMove;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
 }
 
 .main ul{
@@ -119,7 +122,7 @@
 }
 
 .main .li6{
-    background-image: url(../img/mochilaRoja.jpg);
+    background-image: url(../img/mochilaInfluencer.jpg);
 }
 
 .main .li7{
@@ -150,6 +153,110 @@
     transform: scale(1.05);
     transition: .2s;
 }
+
+
+/* MAIN CONTACTO */
+.main h3{
+    background: linear-gradient(0deg, rgba(206,152,53,0.1) 0%, rgba(5,209,209,0.1) 100%);
+    color: #05d1d1;
+    display: inline-block;
+    margin: 10px;
+    padding:15px;
+    border-radius: 20px;
+    font-size: 2rem;
+    animation-name: textMove;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.formulario {
+    background-image: radial-gradient(circle, rgba(5,209,209,0.6624405705229794) 0%, rgba(111,111,111,0.6259904912836767) 100%);
+    margin:20px 15px;
+    border-radius: 25px;
+    display: grid;
+    height: 100vh;
+    padding: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nombre comentario"
+        "email comentario"
+        "pais comentario"
+        "sexo comentario";
+}
+
+.nombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: nombre;
+    align-items: center;
+}
+
+.nombre input{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: email;
+    align-items: center;
+}
+
+.email input{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.pais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: pais;
+    align-items: center;
+}
+
+.pais select{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: sexo;
+    align-items: center;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: comentario;
+    align-items: center;
+}
+
+.comentario textarea{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 3px;
+}
+
+.comentario input{
+    width: 70px;
+    padding: 3px 0px;
+    margin: 3px;
+}
+
 
 /* FOOTER */
 .footer{
@@ -200,8 +307,30 @@
 }
 
 
-/* MEDIA QUERIS */
+/* ANIMACIONES */
+@keyframes textMove{
+    0%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    33%{
+        transform: rotate(10deg);
+        transition: .4s;
+    }
+    66%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    100%{
+        transform: rotate(-10deg);
+        transition: .4s;
+     
+    }
 
+}
+
+
+/* MEDIA QUERIS */
 @media (max-width:998px) {
     .main ul{
         grid-template-areas:
@@ -216,10 +345,6 @@
 
     /* CONTACTO */
     .formulario {
-        margin:20px 15px;
-        border-radius: 25px;
-        display: grid;
-        height: 400px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-auto-flow: row;
@@ -240,6 +365,7 @@
         justify-content: flex-start;
     }
 }
+
 
 @media (max-width:658px){
     .header h1{

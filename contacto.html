@@ -1,84 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAITEEACCESORIOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ESTILO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- MI ESTILO -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CONTACTO MAITEE</title>
+    <link rel="shortcut icon" href="./img/faviconMaitee.png">
 </head>
+
 <body>
     <!-- ENCABEZADO -->
-    <header>
-        <h1>MAITEE ACCESORIOS (tienda de marroquineria)</h1>
-        <nav>
-            <ul> 
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./mochilas.html">MOCHILAS</a></li>
-                    <ol>
-                        <li><a href="#">Mochilas Maternales</a></li>
-                        <li><a href="#">Mochilas Urbanas</a></li>
-                        <li><a href="#">Mochilas Infantiles</a></li>
-                        <li><a href="#">Mochilas School</a></li>
-                    </ol>
-                <li><a href="./billeteras.html">BILLETERAS</a></li>
-                <li><a href="./morrales.html">MORRALES</a></li>
-                <li><a href="./carteras.html">CARTERAS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+    <header class="header">
+        <h1>MAITEE ACCESORIOS DE MODA</h1>
+
+        <nav class="navbar navbar-expand-lg bg-light bg-success fs-5 text-dark bg-opacity-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img id="logoNavbar" src="./img/logoMaitee2.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <!-- DROPDOWN -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                MOCHILAS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Maternales</a></li>
+                                <li><a class="dropdown-item" href="#">School</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./mochilas.html">TODAS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./billeteras.html">BILLETERAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./morrales.html">MORRALES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carteras.html">CARTERAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar producto"
+                            aria-label="Search">
+                        <button class="btn btn-outline-warning " type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <br>
-        <h2>Dejanos tu contacto...<br>Para estar mas cerca tuyo!!!</h2>
+    <main class="main">
+        <h3>Dejanos tu contacto...<br>Para estar mas cerca tuyo!!!</h3>
 
         <!-- Formulario de contato -->
-        <form action="#" method="GET">
-            <p>NOMBRE</p>
-            <input type="text" placeholder="Nombre y Apellido">
-            <P>MAIL</P>
-            <input type="email" placeholder="ejemplo@ejemplo.com">
+        <form class="formulario" action="#" method="GET">
+            <div class="nombre">
+                <p>NOMBRE</p>
+                <input type="text" placeholder="Nombre y Apellido">
+            </div>
 
-            <!-- Seleccion -->
-            <br><br>
-            <select name="pais" id="">
-                <option value="seleccion">Seleccione su País</option>
-                <option value="argentina">Argentina</option>
-                <option value="chile">Chile</option>
-                <option value="paraguay">Paraguay</option>
-                <option value="uruguay">Uruguay</option>
-                <option value="bolivia">Bolivia</option>
-                <option value="brasil">Brasil</option>
-            </select>
+            <div class="email">
+                <p>MAIL</p>
+                <input type="email" placeholder="ejemplo@ejemplo.com">
+            </div>
 
-            <p>SELECCIONE SU SEXO</p>
-            <label for="">
-                <span>hombre</span>
-                <input type="radio" name="sexo" value="Hombre">
-                <span>Mujer</span>
-                <input type="radio" name="sexo" value="mujer">
-                <span>Otro</span>
-                <input type="radio" name="sexo" value="otro">
-            </label>
+            <div class="pais">
+                <p>PAIS DE ORIGEN</p>
+                <select name="pais" id="">
+                    <option value="seleccion">Seleccione su País</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="bolivia">Bolivia</option>
+                    <option value="brasil">Brasil</option>
+                </select>
+            </div>
 
-            <br>       
-            <p>Deja tu Comentario...</p>
-            <textarea name="" id="" cols="60" rows="5"></textarea>
-            <br>
-            <input type="submit" value="Comentar">
-            <input type="reset" value="Borrar">
-            <br>
+            <div class="sexo">
+                <p>SELECCIONE SU SEXO</p>
+                <label for="">
+                    <span>hombre</span>
+                    <input type="radio" name="sexo" value="Hombre">
+                    <span>Mujer</span>
+                    <input type="radio" name="sexo" value="mujer">
+                    <span>Otro</span>
+                    <input type="radio" name="sexo" value="otro">
+                </label>
+            </div>
+
+            <div class="comentario">
+                <p>Deja tu Comentario...</p>
+                <textarea name="" id="" cols="55" rows="5"></textarea>
+                <input type="submit" value="Comentar">
+                <input type="reset" value="Borrar">
+            </div>
         </form>
     </main>
 
     <!-- PIE DE PAGINA -->
-    <footer>
+    <footer class="footer">
+        <!-- newsletter -->
+        <label for="">
+            <span>Suscribirme al newsletter</span>
+            <input type="checbox" placeholder="ejemplo@ejemplo.com">
+        </label>
+        <!-- redes sociales -->
         <ol>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twiter.png" alt=""></a></li>
         </ol>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
