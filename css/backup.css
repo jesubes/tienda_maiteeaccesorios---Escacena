@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+
+#logoNavbar{
+    width: 100px;   
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    width: auto;
+    background-image: url('../img/fondoHeader.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    border-bottom: solid #ce9835 10px;
+}
+
+.header h1{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #313131;
+    font-size: 65px;
+    text-align: center;
+    padding: 15px;
+    margin: 1rem 2rem 0 2rem;
+    border-radius: 30px;
+    
+}
+
+
+/* MAIN */
+.main{
+    width: auto;
+    height: auto;
+    padding: 1px;
+    background-image: url('../img/fondoMain.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+}
+
+/* Cuadro contenedor de imagenes y titulo de mochila */
+.main contenido{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(184, 255, 231, 0.3);
+    border-radius: 40px;
+}
+
+.main h2{
+    background: linear-gradient(0deg, rgba(206,152,53,0.1) 0%, rgba(5,209,209,0.1) 100%);
+    color: #05d1d1;
+    display: inline-block;
+    margin: 10px;
+    padding:50px;
+    border-radius: 20px;
+    font-size: 60px;
+    animation-name: textMove;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.main ul{
+    display: grid;
+    justify-content: space-around;
+    justify-items: end;
+    align-content: center;
+    grid-template-areas:
+    "producto1 producto2 producto3"
+    "producto4 producto5 producto6"
+    "producto7 producto8 producto9";
+    padding: 5px;   
+}
+
+.main li{
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+    border: solid #ce9835 3px;
+    border-radius: 15px;
+    margin: 25px;
+    /* centrar imagen */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+}
+
+.main li:hover {
+    border-radius: 30%;
+    transition: .3s;
+}
+
+.main .li1{
+    background-image: url(../img/mochilaRoja.jpg);
+}
+
+.main .li2{
+    background-image: url(../img/mochilaBlackCamel.jpg);
+}
+
+.main .li3{
+    background-image: url(../img/mochilaBlackWhite.jpg);
+}
+
+.main .li4{
+    background-image: url(../img/mochilaNegraAmayra.jpg);
+}
+
+.main .li5{
+    background-image: url(../img/mochilaNino.jpg);
+}
+
+.main .li6{
+    background-image: url(../img/mochilaInfluencer.jpg);
+}
+
+.main .li7{
+    background-image: url(../img/morralNegroAmayra.jpg);
+}
+
+.main .li8{
+    background-image: url(../img/morralPetrelAmayra.jpg);
+}
+
+.main .li9{
+    background-image: url(../img/morralVerdeAmayra.jpg);
+}
+
+.main a{
+    background-color: rgba(184, 255, 231, 0.3);
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 420px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4b4b4b;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
+/* MAIN CONTACTO */
+.main h3{
+    background: linear-gradient(0deg, rgba(206,152,53,0.1) 0%, rgba(5,209,209,0.1) 100%);
+    color: #05d1d1;
+    display: inline-block;
+    margin: 10px;
+    padding:15px;
+    border-radius: 20px;
+    font-size: 2rem;
+    animation-name: textMove;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.formulario {
+    background-image: radial-gradient(circle, rgba(5,209,209,0.6624405705229794) 0%, rgba(111,111,111,0.6259904912836767) 100%);
+    margin:20px 15px;
+    border-radius: 25px;
+    display: grid;
+    height: 100vh;
+    padding: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nombre comentario"
+        "email comentario"
+        "pais comentario"
+        "sexo comentario";
+}
+
+.nombre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: nombre;
+    align-items: center;
+}
+
+.nombre input{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: email;
+    align-items: center;
+}
+
+.email input{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.pais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: pais;
+    align-items: center;
+}
+
+.pais select{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.sexo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: sexo;
+    align-items: center;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: comentario;
+    align-items: center;
+}
+
+.comentario textarea{
+    padding: 8px;
+    border-radius: 5px;
+    border-style: solid;
+    margin: 3px;
+}
+
+.comentario input{
+    width: 70px;
+    padding: 3px 0px;
+    margin: 3px;
+}
+
+
+/* FOOTER */
+.footer{
+    background-color: #f8b435;
+    border-top: solid #4b4b4b 3px;
+    padding-bottom: 1px;
+}
+
+.footer__label{
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.footer span{
+    color: #4b4b4b;
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.footer input{
+    color: #05d1d1;
+    margin: 5px;
+    padding: 5px;
+    border: inset 5px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.footer ol{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.footer li:hover{
+    transform: scale(1.08);
+}
+
+.footer img{
+    margin: 0 10px 0 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+/* ANIMACIONES */
+@keyframes textMove{
+    0%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    33%{
+        transform: rotate(10deg);
+        transition: .4s;
+    }
+    66%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    100%{
+        transform: rotate(-10deg);
+        transition: .4s;
+     
+    }
+
+}
+
+
+/* MEDIA QUERIS */
+@media (max-width:998px) {
+    .main ul{
+        grid-template-areas:
+        "producto1 producto2"
+        "producto3 producto4"
+        "producto5 producto6"
+        "producto7 producto8"
+        "producto9 producto9";
+        padding: 5px;   
+    }
+    
+
+    /* CONTACTO */
+    .formulario {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nombre nombre"
+            "email email"
+            "pais pais"
+            "sexo sexo"
+            "comentario comentario";
+    
+    }
+
+    .comentario textarea{
+        width: 310px;
+    }
+
+    .footer ol{
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width:658px){
+    .header h1{
+        font-size: 3.5rem;
+    }
+    .main h2{
+        font-size: 3rem;
+        padding: 8px;
+        margin-top: 50px;
+        
+    }
+    .main ul{
+        grid-template-areas:
+        "producto1"
+        "producto2"
+        "producto3"
+        "producto4"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8"
+        "producto9";
+        padding: 5px;   
+    }
+
+    .comentario textarea{
+        width: 260px;
+    }
+
+    .footer ol{
+        justify-content: center;
+    }
+}

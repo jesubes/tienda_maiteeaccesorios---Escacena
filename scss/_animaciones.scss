@@ -1,0 +1,22 @@
+
+/* ANIMACIONES */
+@keyframes textMove{
+    0%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    33%{
+        transform: rotate(10deg);
+        transition: .4s;
+    }
+    66%{
+        transform: rotate(0deg);
+        transition: .4s;
+    }
+    100%{
+        transform: rotate(-10deg);
+        transition: .4s;
+     
+    }
+
+}
